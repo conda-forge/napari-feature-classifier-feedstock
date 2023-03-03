@@ -1,11 +1,11 @@
-About napari-feature-classifier
-===============================
+About napari-feature-classifier-feedstock
+=========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-feature-classifier-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/fractal-napari-plugins-collection/napari-feature-classifier
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-feature-classifier-feedstock/blob/main/LICENSE.txt)
 
 Summary: An interactive classifier plugin to use with label images and feature measurements
 
