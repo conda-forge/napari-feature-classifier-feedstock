@@ -19,24 +19,29 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - imageio
     - magicgui
     - matplotlib-base
     - napari
     - numpy
     - pandas
+    - pandera
     - python >=3.7
+    - python-xxhash
     - qtpy
     - scikit-learn
+    - typing_extensions
 
 test:
   imports:
     - napari_feature_classifier
-    - napari_feature_classifier.classifier_widgets
+    - napari_feature_classifier.classifier_widget
   commands:
     - pip list
-    - pip check
+    # - pip check  # Failds due to hypothesis
   requires:
     - pip
+    - pyqt
 
 about:
   home: https://github.com/fractal-napari-plugins-collection/napari-feature-classifier
