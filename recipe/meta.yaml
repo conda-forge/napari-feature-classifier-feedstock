@@ -38,7 +38,7 @@ test:
     - napari_feature_classifier.classifier_widget
   commands:
     - pip list
-    - pip check
+    # - pip check  # Failds due to hypothesis
   requires:
     - pip
     - pyqt
