@@ -19,14 +19,18 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - imageio
     - magicgui
     - matplotlib-base
     - napari
     - numpy
     - pandas
+    - pandera
     - python >=3.7
+    - python-xxhash
     - qtpy
     - scikit-learn
+    - typing_extensions
 
 test:
   imports:
