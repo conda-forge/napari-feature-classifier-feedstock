@@ -31,7 +31,7 @@ requirements:
 test:
   imports:
     - napari_feature_classifier
-    - napari_feature_classifier.classifier_widgets
+    - napari_feature_classifier.classifier_widget
   commands:
     - pip list
     - pip check
