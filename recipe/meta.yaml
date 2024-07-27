@@ -22,7 +22,7 @@ requirements:
     - imageio
     - magicgui
     - matplotlib-base
-    - napari <0.4.19
+    - napari
     - numpy <2.0
     - pandas
     - pandera <0.20.0
