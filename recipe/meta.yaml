@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 4d9e4ca7fbc4c088afaacf4d376b28c444230827c8f0b14fe13cd36294da3c52
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - imageio
     - magicgui
@@ -26,7 +26,7 @@ requirements:
     - numpy <2.0
     - pandas
     - pandera <0.20.0
-    - python >=3.7
+    - python >={{ python_min }}
     - python-xxhash
     - qtpy
     - scikit-learn >=1.2.2
@@ -42,6 +42,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://github.com/fractal-napari-plugins-collection/napari-feature-classifier
