@@ -10,10 +10,11 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 028417cce9d514846ca5d2a2a20dcba6b0d8aa3bc9dbb5b8e21bcc9da36ef759
 
+
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -45,6 +46,7 @@ test:
     - python {{ python_min }}
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://github.com/fractal-napari-plugins-collection/napari-feature-classifier
