@@ -28,7 +28,7 @@ requirements:
     - numpy
     - pandas
     - pandera
-    - python >= {{ python_min }}
+    - python >={{ python_min }}
     - python-xxhash
     - qtpy
     - scikit-learn >=1.2.2
