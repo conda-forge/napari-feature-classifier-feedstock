@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - numpy
-    - napari >= 0.6.0
+    - napari >=0.6.0
     - imageio
     - magicgui
     - matplotlib-base
