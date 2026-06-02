@@ -1,5 +1,5 @@
 {% set name = "napari-feature-classifier" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3fb0256f14af9208733081a8f0c961ddfc5990b943550fbc613a83f3782710fb
+  sha256: 10c9a40ed19c00d081d67cdd61aea3071eec62da40c88463827ce1cf8aaf097e
 
 
 build:
